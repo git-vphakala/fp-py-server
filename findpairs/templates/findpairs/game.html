@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>findpairs</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'findpairs/font-awesome-4.7.0/css/font-awesome.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'findpairs/spruits-2018.9.css' %}">
+    <style id="spruits-app-styles"></style>
+    <script src="{% static 'findpairs/jquery.js' %}"></script>
+    <script src="{% static 'findpairs/spruits.js' %}"></script>
+    <script src="{% static 'findpairs/spruits2.js' %}"></script>
+    <script>
+        "use strict"
+        $(document).ready(function() {
+            const game_id = {{ game_id_json }}
+
+            $("body").append(game_id);
+        }); //document.ready
+    </script>
+</head>
+<body>
+</body>
+</html>
